@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+}
+.containers{
+   width: 400px;
+padding: 20px 30px;
+color: #fff;
+   position: absolute;
+top: 40%;
+left: 40%;
+background-color: rgb(234, 230, 230);
+border-radius: 10px;
+}
+
+.containers h1{
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    font-weight: 400;
+}
+.containers input{
+    width: 340px;
+    height: 45px;
+    border: 2px solid black;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+button{
+    width: 340px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #0c0b0b;
+    background-color: rgb(234, 96, 96);
+}
+#imgBox{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+}
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#imgBox {
+    margin-top: 20px;
+}
+
+#qrImage {
+    width: 150px;
+    height: 150px;
+    display: none;
+} */

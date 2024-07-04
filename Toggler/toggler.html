@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color toggler</title>
+    <link rel="stylesheet" href="toggler.css">
+</head>
+<body>
+    <div class="toggler">
+<input type="checkbox" class="check" id="check">
+<label for="check" id="checked"></label>
+    </div>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const checkbox = document.querySelector('.check');
+
+    checkbox.addEventListener('change', function () {
+        if (checkbox.checked) {
+            console.log('Checkbox is checked');
+            // Additional actions when checked
+        } else {
+            console.log('Checkbox is unchecked');
+            // Additional actions when unchecked
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

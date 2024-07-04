@@ -1,0 +1,108 @@
+/* * {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #fcfcfc;
+  font-family: sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: (-50%, -50%);
+}
+
+.check {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+label {
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: rgb(15, 15, 15);
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+label::after {
+  content: "";
+  position: absolute;
+  border-radius: 70px;
+  top: 5px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(219, 208, 208);
+  transition: 0.5s;
+}
+/* .check:checked + label::after{
+    background-color: black;
+    left: -5%;
+    transform: translateX(-100%);
+} */
+/* .check:checked + label:after {
+    background-color: black;
+    left: calc(100% -5px);  Adjusted left position 
+    transform: translateX(-100%); Reset transform
+  } */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  }
+  body {
+    background: #0e0c0c;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .toggler {
+    display: flex;
+    align-items: center;
+  }
+  
+  .check {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  
+  label {
+    display: block;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(204, 189, 189);
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+  
+  label::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(8, 8, 8);
+    transition: left 0.5s, background-color 0.5s;
+  }
+  
+  .check:checked + label {
+    background-color: #090a09;
+  }
+  
+  .check:checked + label::after {
+    left: calc(100% - 45px); /* 100% - width of the circle - margin */
+    background-color: rgb(19, 17, 17);
+  }
+  

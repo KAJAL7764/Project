@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-let qrText = document.getElementById("imgText");
-let qrImage = document.getElementById("qrImage");
-let generateBtn = document.getElementById("generateBtn");
+    let imgBox = document.getElementById("imgBox")
+    let qrImage = document.getElementById("qrImage");
+    let qrText = document.getElementById("qrText");
+// let generateBtn = document.getElementById("generateBtn");
 
 function generateQR() {
     const qrValue = qrText.value;
@@ -10,8 +11,12 @@ function generateQR() {
         return;
     }
     qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + encodeURIComponent(qrValue);
-    qrImage.style.display = "block";
+    imgBox.style.display = "block";
+    
 }
-generateBtn.addEventListener('click', generateQR);
+
+document.getElementById("generateBtn").addEventListener('click', generateQR);
 });
 
+
+ 

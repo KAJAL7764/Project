@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home" >
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+    <p>I'm a web developer with a passion for creating beautiful and functional websites.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nostrum quae molestias, culpa, accusantium id dolorem natus ipsum, porro similique nemo perferendis molestiae ea repellendus repudiandae. Sit ratione asperiores dolorem!
+    </p>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <img src="im.png" alt="Project 1">
+            <div class="project-info">
+                <h3>Project Title</h3>
+                <p>Project description goes here.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, voluptatem laudantium illo dolorem nulla ratione consectetur accusantium tenetur quae at hic, ipsum dolores perferendis minima veritatis cupiditate eos ad. Impedit.
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+<section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <!-- Add more skills as needed -->
+    </ul>
+</section>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form action="submit_form.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+</body>
+</html>
